@@ -10,6 +10,12 @@
 	<body class='flexbox' onload="startTime()">
 		<div class="mainbox">
 			<h1 class='title'>Time to DJ, <span class='hl'>Shoko</span>.</h1>
+				<div class='flexbox search'>	
+					<form onsubmit="return searchDDG()" style='width: 80%;'>
+						<input type="text" placeholder="Search..." id='search_box'>
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
 			<table>
 				<tr>
 					<td>
@@ -89,13 +95,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td colspan='2'>
-						<div class='flexbox search'>	
-							<form onsubmit="return searchDDG()" style='width: 80%;'>
-								<input type="text" placeholder="Search..." id='search_box'>
-								<button type="submit"><i class="fas fa-search"></i></button>
-							</form>
-						</div>
+					<td colspan='1'>
 						<div class='flexbox' style='padding: 15px;'>
 							<div class='colcir' style='background-color:var(--black);  '></div>
 							<div class='colcir' style='background-color:var(--red);    '></div>
@@ -116,7 +116,6 @@
 			  const today = new Date();
 			  let hour = today.getHours();
 			  let minute = today.getMinutes();
-			  let seconds = today.seconds();
 			  let day = today.getDate();
 			  let month = today.getMonth();
 			  let year = today.getFullYear();
@@ -125,7 +124,7 @@
 			  let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec" ];
 			  let daySuf = numSuf(day);
 			  minute = checkTime(minute);
-			  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute + "<span class='hl'>:</span>" + seconds;
+			  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute;
 			  document.getElementById('cal').innerHTML = weekDays[weekDay] + ", " + daySuf + " " + months[month] + " " + year;
 			  setTimeout(startTime, 1000);
 			}
