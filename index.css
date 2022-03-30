@@ -31,7 +31,7 @@ body {
 
 .alpha {
 	all:unset;
-	color: rgba(0,0,0,0);
+	color: #dde5ed;
 	background-color: rgba(0,0,0,0);
 }
 
@@ -41,7 +41,6 @@ body {
 
 .title {
 	text-align: center;
-	padding-bottom: 3vh;
 	color: var(--title);
 }
 
@@ -108,7 +107,7 @@ a:hover {
 .search button {
 	background-color: rgba(0,0,0,0);
 	border: 0px;
-	color: #D9E0EE;
+	color: #dde5ed;
 	font-size: 18px;
 	cursor: pointer;
 }
@@ -118,7 +117,7 @@ a:hover {
 /*   Decoration   */
 
 .cat {
-	margin-left: 5rem;
+	margin-left: 8px;
 	font-size: 24px;
 	text-align: center;
 }
