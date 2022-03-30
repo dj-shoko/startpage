@@ -116,6 +116,7 @@
 			  const today = new Date();
 			  let hour = today.getHours();
 			  let minute = today.getMinutes();
+			  let seconds = today.seconds();
 			  let day = today.getDate();
 			  let month = today.getMonth();
 			  let year = today.getFullYear();
@@ -124,7 +125,7 @@
 			  let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec" ];
 			  let daySuf = numSuf(day);
 			  minute = checkTime(minute);
-			  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute;
+			  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute "<span class='hl'>:</span>" + seconds;
 			  document.getElementById('cal').innerHTML = weekDays[weekDay] + ", " + daySuf + " " + months[month] + " " + year;
 			  setTimeout(startTime, 1000);
 			}
