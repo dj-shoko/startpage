@@ -31,7 +31,7 @@ body {
 
 .alpha {
 	all:unset;
-	color: rgba(0,0,0,0);
+	color: #dde5ed;
 	background-color: rgba(0,0,0,0);
 }
 
@@ -108,7 +108,7 @@ a:hover {
 .search button {
 	background-color: rgba(0,0,0,0);
 	border: 0px;
-	color: #D9E0EE;
+	color: #dde5ed;
 	font-size: 18px;
 	cursor: pointer;
 }
