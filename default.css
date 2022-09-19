@@ -14,6 +14,18 @@
 	--cyan:		#89dceb;
 }
 
-body { background-image: url("img/Shoko BG.jpg"); 
-	height: 100%;
-	background-size:contain;}
+body { background-image: url("img/background2.jpg");
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 1920px) {
+	body { background-image: url("img/background1080.jpg");
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (min-device-width: 2560px) {
+	body { background-image: url("img/background1440.jpg");
+		background-repeat: no-repeat;
+	}
+}
